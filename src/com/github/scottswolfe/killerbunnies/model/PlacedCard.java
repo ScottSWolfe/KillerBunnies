@@ -4,7 +4,7 @@ public class PlacedCard extends PlayableCard{
 
 	public PlacedCard(int cardNumber, String deckColor) {
 		super(cardNumber, deckColor);
-		// TODO Auto-generated constructor 
+		// TODO Auto-generated constructor
 	}
 	
 
