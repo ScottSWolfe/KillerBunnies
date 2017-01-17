@@ -1,6 +1,6 @@
 package com.github.scottswolfe.killerbunnies.model;
 
-public class NumberedCard {
+public class NumberedCard extends Card {
 
     private int idnumber; 
     

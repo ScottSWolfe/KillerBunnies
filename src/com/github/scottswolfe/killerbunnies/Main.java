@@ -12,5 +12,8 @@ public class Main {
         System.out.println(card.getIDNumber());
         
         NumberedCard card1 = new NumberedCard(43);
+        
+        
+        Card yellow = new PlayableCard();
     }
 }
