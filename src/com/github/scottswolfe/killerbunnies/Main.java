@@ -1,5 +1,7 @@
 package com.github.scottswolfe.killerbunnies;
 
+import com.github.scottswolfe.killerbunnies.model.*;
+
 public class Main {
 
     public static void main(String[] args){
