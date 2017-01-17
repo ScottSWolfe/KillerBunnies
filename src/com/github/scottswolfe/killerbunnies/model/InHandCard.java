@@ -4,7 +4,7 @@ public class InHandCard extends PlayableCard {
 
 	public InHandCard(int cardNumber, String deckColor) {
 		super(cardNumber, deckColor);
-		// TODO Auto-generated constructor 
+		// TODO Auto-generated constructor
 	}
 	
 	
