@@ -5,7 +5,7 @@ public class NumberedCard extends Card {
     private int idnumber; 
     
     public NumberedCard(int cardNumber){
-        idnumber = cardNumber;
+        idnumber = cardNumber; 
         
     }
     

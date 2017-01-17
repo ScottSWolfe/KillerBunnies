@@ -3,7 +3,7 @@ package com.github.scottswolfe.killerbunnies.model;
 public abstract class Card {
 
     /**
-     * The name of the card.
+     * The name of the card. 
      */
     private String name;
 

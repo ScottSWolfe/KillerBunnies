@@ -4,7 +4,7 @@ public class RunCard extends InHandCard{
 
 	public RunCard(int cardNumber, String deckColor) {
 		super(cardNumber, deckColor);
-		// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor
 	}
 
 }

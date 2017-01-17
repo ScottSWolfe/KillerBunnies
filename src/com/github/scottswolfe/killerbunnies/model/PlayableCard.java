@@ -8,7 +8,7 @@ public class PlayableCard extends NumberedCard  {
 	}
 
 	/**
-     * Color of the deck
+     * Color of the deck 
      */
     private String deckColor;
 }
