@@ -1,4 +1,4 @@
-package com.github.scottswolfe.killerbunnies.model;
+package com.github.scottswolfe.killerbunnies.item.card;
 
 public class RegularRunCard extends RunCard{
 	
