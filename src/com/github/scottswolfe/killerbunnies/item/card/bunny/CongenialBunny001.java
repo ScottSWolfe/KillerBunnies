@@ -1,6 +1,6 @@
-package com.github.scottswolfe.killerbunnies.model.card.bunny;
+package com.github.scottswolfe.killerbunnies.item.card.bunny;
 
-import com.github.scottswolfe.killerbunnies.model.card.BunnyCard;
+import com.github.scottswolfe.killerbunnies.item.card.BunnyCard;
 
 public class CongenialBunny001 extends BunnyCard {
     

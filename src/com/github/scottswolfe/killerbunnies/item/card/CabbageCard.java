@@ -1,4 +1,4 @@
-package com.github.scottswolfe.killerbunnies.model.card;
+package com.github.scottswolfe.killerbunnies.item.card;
 
 public class CabbageCard extends ResourceCard {
 
