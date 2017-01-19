@@ -2,9 +2,15 @@ package com.github.scottswolfe.killerbunnies.model.card;
 
 public class BunnyCard extends RunCard{
 
-	public BunnyCard(int cardNumber, String deckColor) {
+    protected String bunnyType;
+    protected String bunnyColor;
+    
+	public BunnyCard(int cardNumber, String deckColor,
+	                 String bunnyType, String bunnyColor) {
+	    
 		super(cardNumber, deckColor);
-		// TODO Auto-generated constructor stub
+		this.bunnyType = bunnyType;
+		this.bunnyColor = bunnyColor;
 	}
 
 }

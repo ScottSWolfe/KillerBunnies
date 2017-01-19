@@ -5,18 +5,13 @@ import com.github.scottswolfe.killerbunnies.model.card.Card;
 import com.github.scottswolfe.killerbunnies.model.card.NumberedCard;
 import com.github.scottswolfe.killerbunnies.model.card.PlayableCard;
 
+import com.github.scottswolfe.killerbunnies.model.card.bunny.*;
+
 public class Main {
 
     public static void main(String[] args){
-        System.out.println("hello world" + args[0] + " " + args[2]);
         
-        NumberedCard card;
-        card = new NumberedCard(42);
-        System.out.println(card.getIDNumber());
-        
-        NumberedCard card1 = new NumberedCard(43);
-        
-        
-        Card yellow = new PlayableCard();
+        Card newBunny = new CongenialBunny001();
+        System.out.println(newBunny.toString());
     }
 }
