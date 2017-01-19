@@ -1,6 +1,9 @@
 package com.github.scottswolfe.killerbunnies;
 
 import com.github.scottswolfe.killerbunnies.model.*;
+import com.github.scottswolfe.killerbunnies.model.card.Card;
+import com.github.scottswolfe.killerbunnies.model.card.NumberedCard;
+import com.github.scottswolfe.killerbunnies.model.card.PlayableCard;
 
 public class Main {
 

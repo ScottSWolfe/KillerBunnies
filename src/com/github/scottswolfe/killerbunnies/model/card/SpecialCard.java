@@ -1,4 +1,4 @@
-package com.github.scottswolfe.killerbunnies.model;
+package com.github.scottswolfe.killerbunnies.model.card;
 
 public class SpecialCard extends InHandCard{
 
