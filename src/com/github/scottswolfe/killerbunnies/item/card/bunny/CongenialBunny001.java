@@ -1,11 +1,12 @@
 package com.github.scottswolfe.killerbunnies.item.card.bunny;
 
 import com.github.scottswolfe.killerbunnies.item.card.BunnyCard;
+import com.github.scottswolfe.killerbunnies.item.enums.BunnyType;
 
 public class CongenialBunny001 extends BunnyCard {
     
     public CongenialBunny001() {
-        super(001, "blue", "congenial", "blue");
+        super(001, "blue", BunnyType.CONGENIAL, "blue");
     }
     
     
@@ -14,5 +15,6 @@ public class CongenialBunny001 extends BunnyCard {
                 "deckColor: ");
         return string;
     }
+
 
 }
