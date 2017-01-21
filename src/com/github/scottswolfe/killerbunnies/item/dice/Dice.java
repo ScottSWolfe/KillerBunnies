@@ -4,16 +4,14 @@ import com.github.scottswolfe.killerbunnies.item.enums.DiceColor;
 
 public class Dice {
 	
-	protected DiceColor diceColor;
-	protected diceSideNumber
+	// Instance Variables
 	
-    // Instance Variables
+	protected DiceColor diceColor;
+	protected int diceSideNumber;
     
     // Constructor
     
     public Dice(int diceSideNumber, DiceColor diceColor){
-    
-    
     
     }
     
