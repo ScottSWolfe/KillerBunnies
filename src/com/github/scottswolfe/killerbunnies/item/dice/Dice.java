@@ -1,13 +1,21 @@
 package com.github.scottswolfe.killerbunnies.item.dice;
 
-public class Dice {
+import com.github.scottswolfe.killerbunnies.item.enums.DiceColor;
 
+public class Dice {
+	
+	protected DiceColor diceColor;
+	protected diceSideNumber
+	
     // Instance Variables
     
     // Constructor
     
+    public Dice(int diceSideNumber, DiceColor diceColor){
     
     
+    
+    }
     
     
     // Methods
