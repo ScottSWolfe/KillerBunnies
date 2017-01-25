@@ -21,7 +21,6 @@ public class Dice {
     
 
 	public int roll() {
-		System.out.println(diceSideNumber);
 		Random rand = new Random();
         int RandomDiceRoll = rand.nextInt(diceSideNumber);
         return RandomDiceRoll + 1;

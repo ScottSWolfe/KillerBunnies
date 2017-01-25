@@ -13,12 +13,8 @@ public class Main {
 
     public static void main(String[] args){
         
-        BunnyCard newBunny = new CongenialBunny001();
-        System.out.println(newBunny.toString());
-        
-        System.out.println(newBunny.bunnyCount());
-        
         Dice testDice = new ClearDice();
+        for (int i = 0; i != 100; i++)
         System.out.println(testDice.roll());
     }
 }
