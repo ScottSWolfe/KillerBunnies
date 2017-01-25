@@ -1,5 +1,7 @@
 package com.github.scottswolfe.killerbunnies.item.dice;
 
+import java.util.Random;
+
 import com.github.scottswolfe.killerbunnies.item.enums.DiceColor;
 
 public class Dice {
@@ -15,11 +17,13 @@ public class Dice {
     
     }
     
-    
-    // Methods
-    public int roll() {
+
+	public int roll() {
    
-        // look up the java class Random in the java.util package
+		Random rand = new Random();
+        int RandomDiceRoll = rand.nextInt(diceSideNumber);
+        return RandomDiceRoll + 1;
+
     }
    
     
