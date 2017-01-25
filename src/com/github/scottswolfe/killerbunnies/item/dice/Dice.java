@@ -14,12 +14,14 @@ public class Dice {
     // Constructor
     
     public Dice(int diceSideNumber, DiceColor diceColor){
+    	this.diceColor = diceColor;
+    	this.diceSideNumber = diceSideNumber;
     
     }
     
 
 	public int roll() {
-   
+		System.out.println(diceSideNumber);
 		Random rand = new Random();
         int RandomDiceRoll = rand.nextInt(diceSideNumber);
         return RandomDiceRoll + 1;
