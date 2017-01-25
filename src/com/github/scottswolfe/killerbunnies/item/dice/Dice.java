@@ -7,25 +7,22 @@ import com.github.scottswolfe.killerbunnies.item.enums.DiceColor;
 public class Dice {
 	
 	// Instance Variables
-	
 	protected DiceColor diceColor;
 	protected int diceSideNumber;
     
-    // Constructor
-    
+	
+    // Constructor   
     public Dice(int diceSideNumber, DiceColor diceColor){
     	this.diceColor = diceColor;
-    	this.diceSideNumber = diceSideNumber;
-    
+    	this.diceSideNumber = diceSideNumber;  
     }
     
 
+    // Public Methods
 	public int roll() {
 		Random rand = new Random();
         int RandomDiceRoll = rand.nextInt(diceSideNumber);
         return RandomDiceRoll + 1;
-
     }
    
-    
 }
