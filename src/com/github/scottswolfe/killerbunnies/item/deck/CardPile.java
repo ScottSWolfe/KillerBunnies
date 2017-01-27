@@ -1,8 +1,13 @@
 package com.github.scottswolfe.killerbunnies.item.deck;
 
-public class DrawPile {
+import java.util.LinkedList;
+
+import com.github.scottswolfe.killerbunnies.item.card.Card;
+
+public class CardPile {
 
     // Instance Variables
+	protected LinkedList<Card> drawPile;
     // should at least have some data structure containing PlayableCards
     // I'd recommend you look up the java.util.LinkedList class
      
@@ -17,8 +22,9 @@ public class DrawPile {
     /**
      * Removes and returns the top card of the DrawPile
      */
-    public PlayableCard draw() {
-        
+    public Card draw() {
+        return drawPile.removeFirst();
+           
     }
     
     
@@ -27,6 +33,7 @@ public class DrawPile {
      * Randomly shuffles the cards and returns shuffled DrawPile
      */
     public DrawPile shuffle() {
+    	
         
     }
     
