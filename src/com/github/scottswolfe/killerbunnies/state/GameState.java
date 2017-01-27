@@ -3,19 +3,25 @@ package com.github.scottswolfe.killerbunnies.state;
 import java.util.List;
 
 import com.github.scottswolfe.killerbunnies.item.card.BigCarrotCard;
+import com.github.scottswolfe.killerbunnies.item.card.CabbageCard;
+import com.github.scottswolfe.killerbunnies.item.card.DefenseCard;
+import com.github.scottswolfe.killerbunnies.item.card.WaterCard;
+import com.github.scottswolfe.killerbunnies.item.deck.CardPile;
 import com.github.scottswolfe.killerbunnies.item.deck.DiscardPile;
-import com.github.scottswolfe.killerbunnies.item.deck.DrawPile;
 
 public class GameState {
 
-    DrawPile drawPile;
-    DiscardPile discardPile;
-    List<PlayerState> players;
-    StoreState storeState;
-    BunnyCircle bunnyCircle;
-    DrawPile smallCarrotCards;
-    List<BigCarrotCard> bigCarrotCards;
-    
+    private CardPile drawPile;
+    private DiscardPile discardPile;
+    private List<PlayerState> players;
+    private StoreState storeState;
+    private BunnyCircle bunnyCircle;
+    private CardPile smallCarrotCards;
+    private List<BigCarrotCard> bigCarrotCards;
+    private CardPile<CabbageCard> cabbageCards;
+    private CardPile<DefenseCard> defenseCards;
+    private CardPile<WaterCard> waterCards;
+
     
     
     
@@ -28,13 +34,13 @@ public class GameState {
     /**
      * @return the drawPile
      */
-    public DrawPile getDrawPile() {
+    public CardPile getCardPile() {
         return drawPile;
     }
     /**
      * @param drawPile the drawPile to set
      */
-    public void setDrawPile(DrawPile drawPile) {
+    public void setCardPile(CardPile drawPile) {
         this.drawPile = drawPile;
     }
     /**
@@ -88,13 +94,13 @@ public class GameState {
     /**
      * @return the smallCarrotCards
      */
-    public DrawPile getSmallCarrotCards() {
+    public CardPile getSmallCarrotCards() {
         return smallCarrotCards;
     }
     /**
      * @param smallCarrotCards the smallCarrotCards to set
      */
-    public void setSmallCarrotCards(DrawPile smallCarrotCards) {
+    public void setSmallCarrotCards(CardPile smallCarrotCards) {
         this.smallCarrotCards = smallCarrotCards;
     }
     /**

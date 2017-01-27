@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 import com.github.scottswolfe.killerbunnies.item.card.Card;
 
-public class CardPile {
+public class CardPile<Card> {
 
     // Instance Variables
 	protected LinkedList<Card> drawPile;
