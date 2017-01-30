@@ -1,5 +1,5 @@
 package com.github.scottswolfe.killerbunnies.state;
 
-public class PlayerHand {
+public class PlayerBunnyState {
 
 }
