@@ -45,4 +45,11 @@ public class CardPile<Card> {
     	}
     }
     
+    
+    
+    public void setDrawPile(ArrayList<Card> drawPile) {
+    	this.drawPile = drawPile;
+    	
+    }
+    
 }
