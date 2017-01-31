@@ -1,17 +1,20 @@
 package com.github.scottswolfe.killerbunnies.item.card;
 
+import com.github.scottswolfe.killerbunnies.item.enums.BunnyColor;
 import com.github.scottswolfe.killerbunnies.item.enums.BunnyType;
+import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
 public class BunnyCard extends RunCard{
 
     protected BunnyType bunnyType;
-    protected String bunnyColor;
+    protected BunnyColor bunnyColor;
     
-	public BunnyCard(int cardNumber, String deckColor,
-	                 BunnyType bunnyType, String bunnyColor) {
+    
+	public BunnyCard(int cardNumber, DeckColor deckColor, String description,
+	                 BunnyType bunnyType, BunnyColor bunnyColor) {
 	    
-		super(cardNumber, deckColor);
-		this.bunnyType = BunnyType.CONGENIAL;
+		super(cardNumber, description, deckColor);
+		this.bunnyType = bunnyType;
 		this.bunnyColor = bunnyColor;
 	}
 
