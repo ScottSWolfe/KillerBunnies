@@ -1,10 +1,12 @@
 package com.github.scottswolfe.killerbunnies.item.card;
 
+import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
+
 public class SpecialCard extends InHandCard{
 
-	public SpecialCard(int cardNumber, String deckColor) {
-		super(cardNumber, deckColor);
-		// TODO Auto-generated constructor 
+	public SpecialCard(int cardNumber,
+	        String description, DeckColor deckColor) {
+		super(cardNumber, description, deckColor);
 	}
 
 }
