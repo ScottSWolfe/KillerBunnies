@@ -5,13 +5,13 @@ import com.github.scottswolfe.killerbunnies.item.enums.BunnyColor;
 import com.github.scottswolfe.killerbunnies.item.enums.BunnyType;
 import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
-public class CongenialBunny001 extends BunnyCard {
-	
-	static final String DESCRIPTION = "Players that have three bunnies down of the same kind or the same color may play two cards per turn.";
+public class GleefulBunny002 extends BunnyCard {
     
-    public CongenialBunny001() {
-        super(001, DESCRIPTION, DeckColor.BLUE, BunnyType.CONGENIAL, BunnyColor.BLUE);
+	static final String DESCRIPTION = "Players that have three bunnies down of the same kind or the same color may play two cards per turn.";
+	 
+    public GleefulBunny002() {
+        super(002, DESCRIPTION, DeckColor.BLUE, BunnyType.GLEEFUL, BunnyColor.BLUE);
     }
     
-
 }
+
