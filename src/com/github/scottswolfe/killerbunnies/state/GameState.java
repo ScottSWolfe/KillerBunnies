@@ -2,8 +2,8 @@ package com.github.scottswolfe.killerbunnies.state;
 
 import java.util.List;
 
-import com.github.scottswolfe.killerbunnies.item.card.BigCarrotCard;
 import com.github.scottswolfe.killerbunnies.item.card.CabbageCard;
+import com.github.scottswolfe.killerbunnies.item.card.CarrotSupplyCard;
 import com.github.scottswolfe.killerbunnies.item.card.DefenseCard;
 import com.github.scottswolfe.killerbunnies.item.card.WaterCard;
 import com.github.scottswolfe.killerbunnies.item.deck.CardPile;
@@ -17,7 +17,7 @@ public class GameState {
     private StoreState storeState;
     private BunnyCircle bunnyCircle;
     private CardPile smallCarrotCards;
-    private List<BigCarrotCard> bigCarrotCards;
+    private List<CarrotSupplyCard> carrotSupplyCards;
     private CardPile<CabbageCard> cabbageCards;
     private CardPile<DefenseCard> defenseCards;
     private CardPile<WaterCard> waterCards;
@@ -106,14 +106,14 @@ public class GameState {
     /**
      * @return the bigCarrotCards
      */
-    public List<BigCarrotCard> getBigCarrotCards() {
-        return bigCarrotCards;
+    public List<CarrotSupplyCard> getBigCarrotCards() {
+        return carrotSupplyCards;
     }
     /**
      * @param bigCarrotCards the bigCarrotCards to set
      */
-    public void setBigCarrotCards(List<BigCarrotCard> bigCarrotCards) {
-        this.bigCarrotCards = bigCarrotCards;
+    public void setCarrotSupplyCards(List<CarrotSupplyCard> carrotSupplyCards) {
+        this.carrotSupplyCards = carrotSupplyCards;
     }
     
     

@@ -11,7 +11,7 @@ public class LumberingBunny003 extends BunnyCard {
 	 
     
     public LumberingBunny003() {
-        super(003, DESCRIPTION, DeckColor.BLUE, BunnyType.LUMBERING, BunnyColor.BLUE);
+        super(3, DESCRIPTION, DeckColor.BLUE, BunnyType.LUMBERING, BunnyColor.BLUE);
     }
     
 }

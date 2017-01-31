@@ -7,11 +7,13 @@ import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
 public class CongenialBunny011 extends BunnyCard {
 	
-	static final String DESCRIPTION = "Players that have three bunnies down of the same kind or the same color may play two cards per turn.";
+	static final String DESCRIPTION = "Players that have three bunnies down of "
+	        + "the same kind or the same color may play two cards per turn.";
 	 
     
     public CongenialBunny011() {
-        super(011, DESCRIPTION, DeckColor.BLUE, BunnyType.CONGENIAL, BunnyColor.ORANGE);
+        super(11, DESCRIPTION, DeckColor.BLUE,
+                BunnyType.CONGENIAL, BunnyColor.ORANGE);
     }
     
 }

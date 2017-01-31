@@ -11,7 +11,7 @@ public class SinisterBunny004 extends BunnyCard {
 	 
     
     public SinisterBunny004() {
-        super(004, DESCRIPTION, DeckColor.BLUE, BunnyType.SINISTER, BunnyColor.BLUE);
+        super(4, DESCRIPTION, DeckColor.BLUE, BunnyType.SINISTER, BunnyColor.BLUE);
     }
     
 }
