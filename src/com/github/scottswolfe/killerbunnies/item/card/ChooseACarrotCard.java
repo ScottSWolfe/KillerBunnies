@@ -4,9 +4,9 @@ import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
 public class ChooseACarrotCard extends RunCard {
 
-	public ChooseACarrotCard(int cardNumber,
+	public ChooseACarrotCard(String name, int cardNumber,
 	        String description, DeckColor deckColor) {
-		super(cardNumber, description, deckColor);
+		super(name, cardNumber, description, deckColor);
 	}
 
 }

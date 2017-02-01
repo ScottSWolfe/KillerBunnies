@@ -4,9 +4,9 @@ import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
 public class SpecialCard extends InHandCard{
 
-	public SpecialCard(int cardNumber,
+	public SpecialCard(String name, int cardNumber,
 	        String description, DeckColor deckColor) {
-		super(cardNumber, description, deckColor);
+		super(name, cardNumber, description, deckColor);
 	}
 
 }

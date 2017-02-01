@@ -4,9 +4,9 @@ import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
 public class RegularRunCard extends RunCard{
 	
-	public RegularRunCard(int cardNumber,
+	public RegularRunCard(String name, int cardNumber,
 	        String description, DeckColor deckColor) {
-		super(cardNumber, description, deckColor);
+		super(name, cardNumber, description, deckColor);
 	}
 	
 
