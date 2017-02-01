@@ -1,8 +1,9 @@
 package com.github.scottswolfe.killerbunnies.item.card;
 
 import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
+import com.github.scottswolfe.killerbunnies.item.interfaces.BunnyIcon;
 
-public class PlayableCard extends NumberedCard  {
+public class PlayableCard extends NumberedCard implements BunnyIcon {
 
 
     private DeckColor deckColor;
@@ -26,6 +27,10 @@ public class PlayableCard extends NumberedCard  {
     public void setDeckColor(DeckColor deckColor) {
         this.deckColor = deckColor;
     }
-    
-    
+
+    @Override
+    public boolean isAggressive() {
+        return false;
+    }
+     
 }

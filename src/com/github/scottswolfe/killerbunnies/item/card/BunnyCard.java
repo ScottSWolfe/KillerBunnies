@@ -10,10 +10,10 @@ public class BunnyCard extends RunCard{
     protected BunnyColor bunnyColor;
     
     
-	public BunnyCard(int cardNumber, String description, DeckColor deckColor,
-	                 BunnyType bunnyType, BunnyColor bunnyColor) {
+	public BunnyCard(String name, int cardNumber, String description,
+	        DeckColor deckColor, BunnyType bunnyType, BunnyColor bunnyColor) {
 	    
-		super(cardNumber, description, deckColor);
+		super(name, cardNumber, description, deckColor);
 		this.bunnyType = bunnyType;
 		this.bunnyColor = bunnyColor;
 	}
