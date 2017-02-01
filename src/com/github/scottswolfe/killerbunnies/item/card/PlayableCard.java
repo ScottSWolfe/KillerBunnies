@@ -7,9 +7,9 @@ public class PlayableCard extends NumberedCard  {
 
     private DeckColor deckColor;
     
-    public PlayableCard(int cardNumber, String description, 
+    public PlayableCard(String name, int cardNumber, String description, 
             DeckColor deckColor) {
-        super(cardNumber, description);
+        super(name, cardNumber, description);
         this.deckColor = deckColor;
     }
 

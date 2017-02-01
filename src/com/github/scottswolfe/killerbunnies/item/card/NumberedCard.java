@@ -1,12 +1,13 @@
 package com.github.scottswolfe.killerbunnies.item.card;
 
-public class NumberedCard extends Card {
+public abstract class NumberedCard extends Card {
 
     private int cardNumber;
     private String description;
     
     
-    public NumberedCard(int cardNumber, String description){
+    public NumberedCard(String name, int cardNumber, String description) {
+        super(name);
         this.cardNumber = cardNumber; 
         this.description = description;
     }

@@ -2,11 +2,12 @@ package com.github.scottswolfe.killerbunnies.item.card;
 
 import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
-public class PlayImmediatelyCard extends PlacedCard {
+public abstract class PlayImmediatelyCard extends PlacedCard {
 
-    public PlayImmediatelyCard(int cardNumber,
+    public PlayImmediatelyCard(String name, int cardNumber,
             String description, DeckColor deckColor) {
-        super(cardNumber, description, deckColor);
+        super(name, cardNumber, description, deckColor);
     }
 
+    public abstract void cardAction();
 }
