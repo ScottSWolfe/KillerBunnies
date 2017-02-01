@@ -9,9 +9,10 @@ public class LumberingBunny003 extends BunnyCard {
 	
 	static final String DESCRIPTION = "Players that have three bunnies down of the same kind or the same color may play two cards per turn.";
 	 
-    
+    static final String NAME = "Lumbering Bunny";
+	
     public LumberingBunny003() {
-        super(3, DESCRIPTION, DeckColor.BLUE, BunnyType.LUMBERING, BunnyColor.BLUE);
+        super(NAME, 3, DESCRIPTION, DeckColor.BLUE, BunnyType.LUMBERING, BunnyColor.BLUE);
     }
     
 }

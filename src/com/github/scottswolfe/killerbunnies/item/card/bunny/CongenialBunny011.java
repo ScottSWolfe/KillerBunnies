@@ -10,9 +10,10 @@ public class CongenialBunny011 extends BunnyCard {
 	static final String DESCRIPTION = "Players that have three bunnies down of "
 	        + "the same kind or the same color may play two cards per turn.";
 	 
-    
+    static final String NAME = "Congenial Bunny";
+	
     public CongenialBunny011() {
-        super(11, DESCRIPTION, DeckColor.BLUE,
+        super(NAME, 11, DESCRIPTION, DeckColor.BLUE,
                 BunnyType.CONGENIAL, BunnyColor.ORANGE);
     }
     
