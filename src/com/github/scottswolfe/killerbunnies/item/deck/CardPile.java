@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import com.github.scottswolfe.killerbunnies.item.card.Card;
+import com.github.scottswolfe.killerbunnies.item.card.SmallCarrotCard;
 
 public class CardPile<T extends Card> {
 
@@ -43,4 +44,12 @@ public class CardPile<T extends Card> {
     	this.drawPile = drawPile;	
     }
     
+    
+    public static CardPile<SmallCarrotCard> createSmallCarrotCardPile() {
+        
+    }
+    carrotSupplyCards = CardPile.createCarrotSupplyCardPile();
+    cabbageCards = CardPile.createCabbageCardPile();
+    defenseCards = CardPile.createDefenseCardPile();
+    waterCards = CardPile.createWaterCardPile();
 }

@@ -7,8 +7,11 @@ public class GameInitializer {
 
     private int numberOfPlayers;
     
+    
     public GameState initializeGame() {
         
-        SettingsChooser
+        // TODO SettingsChooser gets a settings object and sets instance methods
+        GameState state = new GameState(numberOfPlayers);
+        return state;
     }
 }

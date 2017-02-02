@@ -16,28 +16,28 @@ import com.github.scottswolfe.killerbunnies.item.deck.SmallCarrotCardPile;
 
 public class GameState {
 
-    private DrawPile<PlayableCard> drawPile;
+    private CardPile<PlayableCard> drawPile;
     private DiscardPile<PlayableCard> discardPile;
     private List<PlayerState> players;
     private StoreState storeState;
     private BunnyCircle bunnyCircle;
-    private SmallCarrotCardPile<SmallCarrotCard> smallCarrotCards;
+    private CardPile<SmallCarrotCard> smallCarrotCards;
     private List<CarrotSupplyCard> carrotSupplyCards;
     private CardPile<CabbageCard> cabbageCards;
     private CardPile<DefenseCard> defenseCards;
     private CardPile<WaterCard> waterCards;
 
     public GameState(int numberOfPlayers) {
-        drawPile = new DrawPile<PlayableCard>();
+        drawPile = CardPile.createPlayableCardPile();
         discardPile = new DiscardPile<>();
         players = createPlayers(numberOfPlayers);
         storeState = new StoreState();
         bunnyCircle = new BunnyCircle();
-        smallCarrotCards = new SmallCarrotCardPile<>();
-        carrotSupplyCards = new CarrotSupplyCardPile<>();
-        cabbageCards = new CabbageCardPile<>();
-        defenseCards = new DefenseCardPile<>();
-        waterCards = new WaterCardPile<>();
+        smallCarrotCards = CardPile.createSmallCarrotCardPile();
+        carrotSupplyCards = CardPile.createCarrotSupplyCardPile();
+        cabbageCards = CardPile.createCabbageCardPile();
+        defenseCards = CardPile.createDefenseCardPile();
+        waterCards = CardPile.createWaterCardPile();
     }
     
     public GameState(CardPile<PlayableCard> drawPile,
