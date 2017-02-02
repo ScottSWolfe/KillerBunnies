@@ -12,5 +12,5 @@ public class KaballaDolla088 extends DollaCard {
 		super(NAME, 88, DESCRIPTION, DeckColor.BLUE, 1);
 		
 	}
-
+ 
 }

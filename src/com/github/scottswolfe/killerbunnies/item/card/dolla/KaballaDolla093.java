@@ -13,4 +13,4 @@ public class KaballaDolla093 extends DollaCard {
 		
 	}
 
-}
+} 
