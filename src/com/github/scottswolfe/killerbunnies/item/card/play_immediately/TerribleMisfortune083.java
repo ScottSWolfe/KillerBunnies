@@ -5,8 +5,8 @@ import com.github.scottswolfe.killerbunnies.item.enums.DeckColor;
 
 public class TerribleMisfortune083 extends PlayImmediatelyCard {
 
-    public static final String NAME = "Terrible Misforune";
-    public static final String DESCRIPTION = "One of your bunnies is trapped in"
+    static final String NAME = "Terrible Misforune";
+    static final String DESCRIPTION = "One of your bunnies is trapped in"
             + " an old Fiat just before it is sent to a local junkyard "
             + "compactor!";
             
