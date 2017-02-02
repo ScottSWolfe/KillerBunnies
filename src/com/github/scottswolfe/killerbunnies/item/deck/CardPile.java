@@ -5,50 +5,42 @@ import java.util.Random;
 
 import com.github.scottswolfe.killerbunnies.item.card.Card;
 
-public class CardPile<Card> {
+public class CardPile<T extends Card> {
 
     // Instance Variables
-	protected ArrayList<Card> drawPile;
-    // should at least have some data structure containing PlayableCards
-    // I'd recommend you look up the java.util.LinkedList class
-     
+	protected ArrayList<T> drawPile;     
     
     // Constructor
-    // maybe don't worry about this yet...
-    
+	public CardPile () {
+	    
+	}
     
     
     // Methods
     
     /**
-     * Removes and returns the top card of the DrawPile
+     * Removes and returns the top card of the CardPile
      */
-    public Card draw() {
-        return drawPile.remove(drawPile.size()-1);
-           
+    public T draw() {
+        return drawPile.remove(drawPile.size()-1);      
     }
-    
-    
     
     /**
      * Randomly shuffles the cards and returns shuffled DrawPile
      */
     public void shuffle() {
-    	Random randomNumber = new Random();
-    	for ( int indexNumber = 0; indexNumber < drawPile.size() ; indexNumber ++){
-    		int randNumber = randomNumber.nextInt(drawPile.size());
-    		Card shuffle1 = drawPile.get(indexNumber);
+    	Random rand = new Random();
+    	for (int indexNumber = 0; indexNumber < drawPile.size() ; indexNumber ++) {
+    		int randNumber = rand.nextInt(drawPile.size());
+    		T cardAtIndex = drawPile.get(indexNumber);
     		drawPile.set(indexNumber, drawPile.get(randNumber));
-    		drawPile.set(randNumber, shuffle1);
+    		drawPile.set(randNumber, cardAtIndex);
     		
     	}
     }
     
-    
-    
-    public void setDrawPile(ArrayList<Card> drawPile) {
-    	this.drawPile = drawPile;
-    	
+    public void setDrawPile(ArrayList<T> drawPile) {
+    	this.drawPile = drawPile;	
     }
     
 }
