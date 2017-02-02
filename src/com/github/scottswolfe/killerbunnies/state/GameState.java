@@ -1,58 +1,99 @@
 package com.github.scottswolfe.killerbunnies.state;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.github.scottswolfe.killerbunnies.item.card.CabbageCard;
 import com.github.scottswolfe.killerbunnies.item.card.CarrotSupplyCard;
 import com.github.scottswolfe.killerbunnies.item.card.DefenseCard;
+import com.github.scottswolfe.killerbunnies.item.card.PlayableCard;
+import com.github.scottswolfe.killerbunnies.item.card.SmallCarrotCard;
 import com.github.scottswolfe.killerbunnies.item.card.WaterCard;
 import com.github.scottswolfe.killerbunnies.item.deck.CardPile;
 import com.github.scottswolfe.killerbunnies.item.deck.DiscardPile;
+import com.github.scottswolfe.killerbunnies.item.deck.DrawPile;
+import com.github.scottswolfe.killerbunnies.item.deck.SmallCarrotCardPile;
 
 public class GameState {
 
-    private CardPile drawPile;
-    private DiscardPile discardPile;
+    private DrawPile<PlayableCard> drawPile;
+    private DiscardPile<PlayableCard> discardPile;
     private List<PlayerState> players;
     private StoreState storeState;
     private BunnyCircle bunnyCircle;
-    private CardPile smallCarrotCards;
+    private SmallCarrotCardPile<SmallCarrotCard> smallCarrotCards;
     private List<CarrotSupplyCard> carrotSupplyCards;
     private CardPile<CabbageCard> cabbageCards;
     private CardPile<DefenseCard> defenseCards;
     private CardPile<WaterCard> waterCards;
 
+    public GameState(int numberOfPlayers) {
+        drawPile = new DrawPile<PlayableCard>();
+        discardPile = new DiscardPile<>();
+        players = createPlayers(numberOfPlayers);
+        storeState = new StoreState();
+        bunnyCircle = new BunnyCircle();
+        smallCarrotCards = new SmallCarrotCardPile<>();
+        carrotSupplyCards = new CarrotSupplyCardPile<>();
+        cabbageCards = new CabbageCardPile<>();
+        defenseCards = new DefenseCardPile<>();
+        waterCards = new WaterCardPile<>();
+    }
     
+    public GameState(CardPile<PlayableCard> drawPile,
+                     DiscardPile<PlayableCard> discardPile,
+                     List<PlayerState> players,
+                     StoreState storeState,
+                     BunnyCircle bunnyCircle,
+                     CardPile<SmallCarrotCard> smallCarrotCards,
+                     List<CarrotSupplyCard> carrotSupplyCards,
+                     CardPile<CabbageCard> cabbageCards,
+                     CardPile<DefenseCard> defenseCards,
+                     CardPile<WaterCard> waterCards) {
+        
+        this.drawPile = drawPile;
+        this.discardPile = discardPile;
+        this.players = players;
+        this.storeState = storeState;
+        this.bunnyCircle = bunnyCircle;
+        this.smallCarrotCards = smallCarrotCards;
+        this.carrotSupplyCards = carrotSupplyCards;
+        this.cabbageCards = cabbageCards;
+        this.defenseCards = defenseCards;
+        this.waterCards = waterCards;
+    }
     
-    
-    
-    
-    
-    
-    
+    private List<PlayerState> createPlayers(int numberOfPlayers) {
+        List<PlayerState> players = new ArrayList<>();
+        for (int i = 0; i < numberOfPlayers; i++) {
+            PlayerState player = new PlayerState();
+            players.add(player);
+        }
+        return players;
+    }
     
     /**
      * @return the drawPile
      */
-    public CardPile getCardPile() {
+    public CardPile<PlayableCard> getCardPile() {
         return drawPile;
     }
     /**
      * @param drawPile the drawPile to set
      */
-    public void setCardPile(CardPile drawPile) {
+    public void setCardPile(CardPile<PlayableCard> drawPile) {
         this.drawPile = drawPile;
     }
     /**
      * @return the discardPile
      */
-    public DiscardPile getDiscardPile() {
+    public DiscardPile<PlayableCard> getDiscardPile() {
         return discardPile;
     }
     /**
      * @param discardPile the discardPile to set
      */
-    public void setDiscardPile(DiscardPile discardPile) {
+    public void setDiscardPile(DiscardPile<PlayableCard> discardPile) {
         this.discardPile = discardPile;
     }
     /**
@@ -94,13 +135,13 @@ public class GameState {
     /**
      * @return the smallCarrotCards
      */
-    public CardPile getSmallCarrotCards() {
+    public CardPile<SmallCarrotCard> getSmallCarrotCards() {
         return smallCarrotCards;
     }
     /**
      * @param smallCarrotCards the smallCarrotCards to set
      */
-    public void setSmallCarrotCards(CardPile smallCarrotCards) {
+    public void setSmallCarrotCards(CardPile<SmallCarrotCard> smallCarrotCards) {
         this.smallCarrotCards = smallCarrotCards;
     }
     /**

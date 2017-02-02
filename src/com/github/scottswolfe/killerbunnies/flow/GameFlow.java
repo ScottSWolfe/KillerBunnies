@@ -8,16 +8,13 @@ public class GameFlow {
     
     
     public void initializeGame() {
-        
-        state = getUserSettings();
+        GameInitializer initializer = new GameInitializer();
+        state = initializer.initializeGame();
     }
     
     public void runGame() {
         
     }
 
-    private GameState getUserSettings() {
-        // number of players
-        // 
-    }
+
 }

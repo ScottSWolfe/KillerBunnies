@@ -1,6 +1,7 @@
 package com.github.scottswolfe.killerbunnies.flow;
 
-public class SettingsChooser {
+public interface SettingsChooser {
 
-    public static 
+    public void getSettings();
+    
 }
