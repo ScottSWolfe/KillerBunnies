@@ -1,17 +1,21 @@
 package com.github.scottswolfe.killerbunnies.flow;
 
+import com.github.scottswolfe.killerbunnies.flow.interfaces.SettingsChooser;
+import com.github.scottswolfe.killerbunnies.state.GameSettings;
 import com.github.scottswolfe.killerbunnies.state.GameState;
 
 
 public class GameInitializer {
 
-    private int numberOfPlayers;
-    
+    SettingsChooser settingsChooser;
+    GameSettings settings;
     
     public GameState initializeGame() {
         
-        // TODO SettingsChooser gets a settings object and sets instance methods
-        GameState state = new GameState(numberOfPlayers);
+        settingsChooser = new TextUISettingsChooser();
+        settings = settingsChooser.getSettings();
+        
+        GameState state = new GameState(settings.getNumberOfPlayers());
         return state;
     }
 }
