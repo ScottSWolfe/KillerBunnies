@@ -3,7 +3,10 @@ package com.github.scottswolfe.killerbunnies.item.deck;
 import java.util.ArrayList;
 import java.util.Random;
 
+import com.github.scottswolfe.killerbunnies.item.card.CabbageCard;
 import com.github.scottswolfe.killerbunnies.item.card.Card;
+import com.github.scottswolfe.killerbunnies.item.card.CarrotSupplyCard;
+import com.github.scottswolfe.killerbunnies.item.card.DefenseCard;
 import com.github.scottswolfe.killerbunnies.item.card.SmallCarrotCard;
 
 public class CardPile<T extends Card> {
@@ -46,10 +49,23 @@ public class CardPile<T extends Card> {
     
     
     public static CardPile<SmallCarrotCard> createSmallCarrotCardPile() {
-        
+        return null; // TODO: implement method
     }
-    carrotSupplyCards = CardPile.createCarrotSupplyCardPile();
-    cabbageCards = CardPile.createCabbageCardPile();
-    defenseCards = CardPile.createDefenseCardPile();
-    waterCards = CardPile.createWaterCardPile();
+    
+    public static CardPile<CarrotSupplyCard> createCarrotSupplyCardPile() {
+        return null; // TODO: implement method
+    }
+
+    public static CardPile<CabbageCard> createCabbageCardPile() {
+        return null; // TODO: implement method
+    }
+    
+    public static CardPile<DefenseCard> createDefenseCardPile() {
+        return null; // TODO: implement method
+    }
+    
+    public static CardPile<WaterCard> createWaterCardPile() {
+        return null; // TODO: implement method
+    }
+
 }
